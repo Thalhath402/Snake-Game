@@ -1,0 +1,93 @@
+body{
+  background-color: #9ACD32;
+}
+.display{
+  margin-left: auto;
+  margin-right: auto;
+}
+  .field {
+   
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    border:1px dotted ;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to top right, #66ff99 0%, #339933 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main{
+    position: relative;
+  }
+  .start{
+    text-align: center;
+    margin: 1.5rem;
+  }
+  button{
+    font-size: 1.3rem;
+    background-color: #E74C3C ;
+    border-radius: 5px;
+    color: white;
+    height: 2.5rem;
+    border: none !important;
+  } 
+  .score{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    color: red;
+  }
+
+  #result{
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    color: rgb(16, 14, 20);
+    font-weight: bolder;
+    font-size: 2rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family:  Copperplate, Papyrus, fantasy;
+    background-image: url("./images/snake.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: none;
+    text-align: center;
+    
+}
+  .field div {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .snake {
+    background: radial-gradient(circle at -3.1% -4.3%, rgb(57, 255, 186) 0%, rgb(21, 38, 82) 90%);
+    
+  }
+  .food {
+    background: linear-gradient(to top right, #ffccff 0%, #ff6600 100%);
+    border-radius: 35%;
+  }
+  @media screen and (max-width:680px) {
+    .field {
+        width: 300px;
+        height: 300px;      
+    }
+    .field div {
+        width: 15px;
+        height: 15px;
+    }
+    #result{    
+        font-size: 1.5rem;
+    }
+    button{     
+        height: 2rem;
+        font-size: .7rem;       
+    }
+}
